@@ -1,0 +1,7 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+google-generativeai
+google-cloud-bigquery
+numpy
+cachetools
