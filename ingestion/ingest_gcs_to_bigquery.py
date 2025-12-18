@@ -116,7 +116,7 @@ def bq_client(project_id: Optional[str]) -> bigquery.Client:
 
 
 def ensure_dataset_table_exists_note():
-    # We created tables already. If user changes names, they'd need to create them.
+    # Created tables already. If user changes names, they'd need to create them.
     pass
 
 
@@ -126,7 +126,7 @@ def insert_rows_bq(
     rows: List[Dict],
 ) -> None:
     """
-    Uses streaming inserts. For bigger loads later, we can switch to load jobs.
+    Uses streaming inserts. For bigger loads later,can switch to load jobs.
     """
     errors = client.insert_rows_json(table_fq, rows)
     if errors:
