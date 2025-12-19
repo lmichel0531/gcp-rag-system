@@ -110,7 +110,6 @@ def build_rag_prompt(question: str, chunks: List[Dict]) -> List[Dict]:
 
 
 def generate_answer(question: str, chunks: List[Dict]) -> str:
-    # UPDATED MODEL NAME HERE 👇
     model = genai.GenerativeModel("gemini-2.5-flash")
 
     messages = build_rag_prompt(question, chunks)
