@@ -40,7 +40,7 @@ def configure_gemini():
 class QueryRequest(BaseModel):
     question: str
     k: int = 5
-    include_context: bool = False  # Optional "B" mode for debugging
+    include_context: bool = False  
 
 
 class Source(BaseModel):
